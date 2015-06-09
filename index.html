@@ -4,7 +4,19 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<meta charset="UTF-8">
 	<title>Riikka Hyv&ouml;nen</title>
-<style>
+	<style>
+		* { margin: 0; padding: 0; }
+		
+		html { 
+			background: url(riikka-1.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+
+
 
 /* background setup */
 .background {
@@ -60,17 +72,19 @@ section {
     height:50%;
 }
 
+
+
+
+
 </style>
 </head>
 <body>
-<div class="fullscreen background" style="background-image:url('riikka-1.jpg');" data-img-width="3927" data-img-height="1903">
+
     <div class="content-a">
         <div class="content-b">
-            Riikka Hyv&ouml;nen<br /> riikka@riikkahyvonen.com
+            RIIKKA HYV&Ouml;NEN
         </div>
     </div>
-</div>
-
 
 /* fix vertical when not overflow
 call fullscreenFix() if .fullscreen content changes */
@@ -123,7 +137,5 @@ function backgroundResize(){
 $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
 backgroundResize();
-
-
 </body>
 </html>
